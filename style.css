@@ -1,0 +1,115 @@
+/* style.css */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ADD8E6;
+}
+
+header {
+  background-color: #17b0bb;
+  color: #ca2b2b;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ADD8E6;
+}
+
+section {
+  padding: 60px 40px;
+}
+
+h1, h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.fish-animation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.fish {
+  width: 100px;
+  height: 50px;
+  background-image: url("fish_gif_animation.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: swim 3s ease-in-out infinite;
+}
+
+@keyframes swim {
+  0% {
+    transform: translateX(-100px);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+}
+
+.person-animation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.person {
+  width: 100px;
+  height: 200px;
+  background-image: url("penyelam.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: walk 5s ease-in-out infinite;
+}
+
+@keyframes walk {
+  0% {
+    transform: translateX(-100px);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
